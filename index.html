@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenn – Food</title>
+    <link rel="stylesheet" href="GiaoDien.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+        MÌ CAY CHÍNH THỐNG
+    </div>
+    
+    <!-- GIỎ HÀNG -->
+    <div class="cart-icon" id="cartIcon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="logo">
+            <div class="logo-circle">L</div>
+            <span>LENN</span>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" id="homeLink">Trang chủ</a></li>
+                <li><a href="#" id="btnMenu">Thực đơn</a></li>
+                <li><a href="#" id="about-content">Giới thiệu</a></li>
+                <li><a href="#" id="contactLink">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="hotline">
+            <i class="fa-solid fa-phone"></i> 1900 6868
+        </div>
+
+        <button class="menu-toggle" id="menuToggleBtn">☰</button>
+
+        <div class="header-right">
+            <!-- SEARCH -->
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Tìm món ăn..." />
+                <button type="button" id="searchBtn">🔍</button>
+            </div>
+
+            <!-- LOGIN -->
+            <button class="login-btn" id="loginBtn">Đăng nhập</button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>TẾT NÀY<br>CON SẼ VỀ</h1>
+            <p>Ăn mì cay LENN xong con về liền</p>
+            <button class="about-btn btn-scroll">ĐẶT MÓN NGAY</button>
+        </div>
+
+        <div class="hero-image">
+            <img src="nen.jpg" alt="Mì cay">
+            <img src="anhquanchinh.jpg" alt="ảnh quán">
+            <img src="tauhai.jpg" alt="ảnh quán">
+        </div>
+    </section>
+
+    <section class="about">
+    </section>
+
+    <!-- ===== MENU SECTION ===== -->
+    <section class="menu-section" id="menuSection">
+        <h2 class="menu-title">🍜 THỰC ĐƠN LENN 🍹</h2>
+
+        <!-- ===== MÌ CAY ===== -->
+        <h3 class="category-title" id="mi-cay">Mì cay</h3>
+        <div class="menu-grid">
+            <div class="food-card">
+                <img src="mi-kim-chi-bo.png" alt="Mì cay bò">
+                <h4>Mì cay bò</h4>
+                <p class="price">40.000đ</p>
+                <select>
+                    <option selected disabled>🌶 Chọn cấp độ cay</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="haisan.jpg" alt="Mì cay hải sản">
+                <h4>Mì cay hải sản</h4>
+                <p class="price">45.000đ</p>
+                <select>
+                    <option selected disabled>🌶 Chọn cấp độ cay</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="thapcam.jpg" alt="Mì cay thập cẩm">
+                <h4>Mì cay thập cẩm</h4>
+                <p class="price">50.000đ</p>
+                <select>
+                    <option selected disabled>🌶 Chọn cấp độ cay</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="micayxuxich.jpg" alt="Mì cay xúc xích">
+                <h4>Mì cay xúc xích</h4>
+                <p class="price">30.000đ</p>
+                <select>
+                    <option selected disabled>🌶 Chọn cấp độ cay</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="micayholo.jpg" alt="Mì cay hồ lô">
+                <h4>Mì cay hồ lô</h4>
+                <p class="price">30.000đ</p>
+                <select>
+                    <option selected disabled>🌶 Chọn cấp độ cay</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+        </div>
+
+        <!-- ===== MÓN ĂN KÈM ===== -->
+        <h3 class="category-title" id="mon-an-kem">Ăn vặt & món kèm</h3>
+        <div class="menu-grid">
+            <div class="food-card">
+                <img src="xucxich.jpg">
+                <h4>Xúc xích</h4>
+                <p class="price">10.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="tokboky.jpg">
+                <h4>Tokbokki cay</h4>
+                <p class="price">25.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="tobokicheese.jpg">
+                <h4>Tokbokki phô mai</h4>
+                <p class="price">35.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="châng.jpg">
+                <h4>Chân gà rút xương sốt thái</h4>
+                <p class="price">45.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="duiga.jpg">
+                <h4>Đùi gà rán</h4>
+                <p class="price">25.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="khoaitay.jpg">
+                <h4>Khoai tây chiên</h4>
+                <p class="price">20.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+        </div>
+
+        <!-- ===== BÁNH TRÁNG ===== -->
+        <h3 class="category-title" id="banh-trang">Bánh tráng</h3>
+        <div class="menu-grid">
+            <div class="food-card">
+                <img src="banhtrantoiphi.jpg">
+                <h4>Bánh tráng tỏi phi</h4>
+                <p class="price">20.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="banhtrangcuonbo.jpg">
+                <h4>Bánh tráng cuộn bơ</h4>
+                <p class="price">20.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+        </div>
+
+        <!-- ===== NƯỚC UỐNG ===== -->
+        <h3 class="category-title" id="nuoc-uong">Nước uống</h3>
+        <div class="menu-grid">
+            <div class="food-card">
+                <img src="trachanh.jpg">
+                <h4>Trà chanh nha đam</h4>
+                <p class="price">15.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="trachanhday.jpg">
+                <h4>Trà lài chanh dây</h4>
+                <select class="size-select">
+                    <option value="" disabled selected>Chọn size</option>
+                    <option value="15000">M - 15K</option>
+                    <option value="20000">L - 20K</option>
+                </select>
+                <p class="price-display">Giá: --</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="trasua.jpg">
+                <h4>Trà sữa trân châu</h4>
+                <p class="price">20.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="machalatte.jpg">
+                <h4>Matcha Latte</h4>
+                <p class="price">20.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+
+            <div class="food-card">
+                <img src="pepsi.jpg">
+                <h4>Nước ngọt</h4>
+                <p class="price">15.000đ</p>
+                <button class="add-to-cart-btn">Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="aboutSection">
+        <div class="about-images">
+            <img src="anhquan.jpg" class="img-big">
+            <img src="anhquan2.jpg" class="img-small">
+        </div>
+
+        <div class="about-content">
+            <h2 class="title">🔥 <span>Về LENN</span></h2>
+            <p class="desc">
+                LENN là quán mì cay chuẩn vị Hàn Quốc với hơn 7 cấp độ cay thử thách.
+                Không gian hiện đại, trẻ trung, phù hợp cho bạn bè tụ họp và check-in.
+            </p>
+            <ul class="about-list">
+                <li>7 cấp độ cay độc đáo</li>
+                <li>Nguyên liệu tươi mỗi ngày</li>
+                <li>Không gian sạch đẹp, thoải mái</li>
+                <li>Giao hàng nhanh toàn thành phố</li>
+            </ul>
+            <button class="about-btn" id="exploreMenuBtn">Khám phá thực đơn</button>
+        </div>
+    </section>
+
+    <!-- ===== FORM ĐẶT HÀNG ===== -->
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+    <div class="cart-panel" id="cartPanel">
+        <button class="close-cart" id="closeCartBtn">&times;</button>
+        <div class="customer-info">
+            <input type="text" id="customer-name" placeholder="👤 Họ và tên">
+            <input type="tel" id="customer-phone" placeholder="📞 Số điện thoại">
+            <input type="text" id="customer-address" placeholder="📍 Địa chỉ giao hàng">
+        </div>
+        <h3>🛒 Giỏ hàng</h3>
+        <ul id="cart-items" style="list-style: none; padding: 0;"></ul>
+        <p class="total">Tổng: <span id="cart-total">0</span>đ</p>
+        <button class="checkout" id="checkoutBtn">Đặt hàng</button>
+    </div>
+
+    <!-- ===== AUTH MODAL ===== -->
+    <div class="auth-modal" id="authModal">
+        <div class="auth-box">
+            <span class="close" id="closeAuthBtn">&times;</span>
+            <div class="auth-tabs">
+                <button id="tabLoginBtn" class="active">Đăng nhập</button>
+                <button id="tabRegisterBtn">Đăng ký</button>
+            </div>
+            <div class="auth-form" id="loginForm">
+                <h3>Đăng nhập</h3>
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Mật khẩu">
+                <button>Đăng nhập</button>
+            </div>
+            <div class="auth-form hidden" id="registerForm">
+                <h3>Đăng ký</h3>
+                <input type="text" placeholder="Họ tên">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Mật khẩu">
+                <input type="password" placeholder="Nhập lại mật khẩu">
+                <button>Đăng ký</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PAYMENT MODAL ===== -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-box">
+            <h3>Chọn phương thức thanh toán</h3>
+            <button id="payCODBtn">💵 Thanh toán khi nhận hàng</button>
+            <button id="payQRBtn">Thanh toán QR</button>
+            <span class="close" id="closePaymentBtn">&times;</span>
+        </div>
+    </div>
+
+    <!-- ===== QR MODAL ===== -->
+    <div id="qrModal" class="qr-modal">
+        <div class="qr-box">
+            <h3>Quét mã để thanh toán</h3>
+            <img id="qrImage" src="" alt="QR">
+            <p class="qr-info">
+                Ngân hàng: Agribank<br>
+                STK: 5005205237750<br>
+                Chủ TK: NGUYEN QUOC THANG
+            </p>
+            <button id="closeQRBtn">Đóng</button>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footerContact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <div class="logo-circle">L</div>
+                    <span>LENN</span>
+                </div>
+                <p class="footer-desc">Mì cay chính thống Hàn Quốc<br>Mang hương vị đậm đà đến từng sợi mì</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Về LENN</h4>
+                <ul>
+                    <li><a href="#" id="footerAbout">Về chúng tôi</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                    <li><a href="#">Trung tâm hỗ trợ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Thực đơn</h4>
+                <ul>
+                    <li><a href="#" id="link-mi-cay">Mì cay</a></li>
+                    <li><a href="#" id="link-mon-an-kem">Món ăn kèm</a></li>
+                    <li><a href="#" id="link-banh-trang">Bánh tráng</a></li>
+                    <li><a href="#" id="link-nuoc-uong">Nước uống</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Liên hệ</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> 1900 6868</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@lennfood.vn</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Đường Nguyễn Huệ, Q1, TP.HCM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>© 2026 LENN Food. All rights reserved.</p>
+            </div>
+            <div class="footer-bottom-right">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BOTTOM NAV (Mobile) ===== -->
+    <div class="bottom-nav">
+        <button class="bottom-nav-item active" data-section="home">
+            <i class="fa-solid fa-house"></i>
+            <span>Trang chủ</span>
+        </button>
+        <button class="bottom-nav-item" data-section="menu">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Thực đơn</span>
+        </button>
+        <button class="bottom-nav-item" data-section="about">
+            <i class="fa-solid fa-info-circle"></i>
+            <span>Giới thiệu</span>
+        </button>
+        <button class="bottom-nav-item" data-section="contact">
+            <i class="fa-solid fa-phone"></i>
+            <span>Liên hệ</span>
+        </button>
+    </div>
+
+    <script src="GiaoDien.js"></script>
+</body>
+
+</html>
